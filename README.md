@@ -32,7 +32,7 @@ Install dependencies: No external dependencies are required beyond the standard 
 go run main.go
 ```
 
-The API will start running locally at `http://localhost:8080`.
+The API will start running locally at `http://localhost:7777`.
 
 ## API Endpoints
 
@@ -57,7 +57,7 @@ The API will start running locally at `http://localhost:8080`.
 #### Steps to Create a Watchlist Using Postman:
 
 1. Open Postman and create a new request.
-2. Set the method to `POST` and the URL to `http://localhost:8080/watchlists`.
+2. Set the method to `POST` and the URL to `http://localhost:7777/watchlists`.
 3. Go to the **Body** tab, select **raw**, and choose **JSON**.
 4. In the body, provide a watchlist in JSON format, like this:
     ```json
@@ -81,9 +81,9 @@ The API will start running locally at `http://localhost:8080`.
 
 #### Steps to Retrieve a Watchlist Using Postman:
 
-1. Set the method to `GET` and the URL to `http://localhost:8080/watchlists/{id}`, where `{id}` is the unique ID of the watchlist you want to retrieve. For example:
+1. Set the method to `GET` and the URL to `http://localhost:7777/watchlists/{id}`, where `{id}` is the unique ID of the watchlist you want to retrieve. For example:
     ```bash
-    http://localhost:8080/watchlists/list1
+    http://localhost:7777/watchlists/list1
     ```
 2. Click **Send**. You will receive the watchlist in the response if it exists.
 
@@ -108,9 +108,9 @@ The API will start running locally at `http://localhost:8080`.
 
 #### Steps to Update a Watchlist Using Postman:
 
-1. Set the method to `PUT` and the URL to `http://localhost:8080/watchlists/{id}`, where `{id}` is the unique ID of the watchlist you want to update. For example:
+1. Set the method to `PUT` and the URL to `http://localhost:7777/watchlists/{id}`, where `{id}` is the unique ID of the watchlist you want to update. For example:
     ```bash
-    http://localhost:8080/watchlists/list1
+    http://localhost:7777/watchlists/list1
     ```
 2. Go to the **Body** tab, select **raw**, and choose **JSON**.
 3. In the body, provide the updated watchlist details, like this:
@@ -134,9 +134,9 @@ The API will start running locally at `http://localhost:8080`.
 
 #### Steps to Delete a Watchlist Using Postman:
 
-1. Set the method to `DELETE` and the URL to `http://localhost:8080/watchlists/{id}`, where `{id}` is the unique ID of the watchlist you want to delete. For example:
+1. Set the method to `DELETE` and the URL to `http://localhost:7777/watchlists/{id}`, where `{id}` is the unique ID of the watchlist you want to delete. For example:
     ```bash
-    http://localhost:8080/watchlists/list1
+    http://localhost:7777/watchlists/list1
     ```
 2. Click **Send**. You should receive a `200 OK` response if the watchlist is successfully deleted.
 
